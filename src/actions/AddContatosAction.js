@@ -1,11 +1,11 @@
 export default {
     AddContato(contato) {
+        console.log('ASYNC_ADD_CONTATO', contato);
         return {
-            type: 'ADD_CONTATO',
+            type: 'ASYNC_ADD_CONTATO',
             payload: {
                 contato: contato
-            } 
+            }
         }
     }
 }
-

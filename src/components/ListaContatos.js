@@ -9,7 +9,7 @@ const ListaContatos = () => {
     //     this.handlerCarregaLista = this.handlerCarregaLista.bind(this)
     // }
     // handlerCarregaLista() {
-    //   this.props.carregaLista() 
+    //   this.props.carregaLista()
     // }
     // render(){
         return (
@@ -25,18 +25,10 @@ const ListaContatos = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            {this.state.contatos.map((contato, index) => {
-                                return (
-                                    <tr>
-                                        <td>{contato.nome}</td>
-                                        <td>{contato.telefone}</td>
-                                        <td>{contato.email}</td>
-                                    </tr>
-                                )
-                            })}
+                            
                         </tbody>
                     </table>
-                </div>    
+                </div>
                 <div className='column'></div>
             </div>
         );
@@ -52,7 +44,7 @@ const ListaContatos = () => {
 // const mapDispatchToProps = (dispatch) => {
 //     return {
 //       carregaLista: (lista) => dispatch(CarregaListaAction.carregaLista(lista))
-//     }    
+//     }
 // }
 
 // export default connect(mapStateToProps, mapDispatchToProps)(ListaContatos)
